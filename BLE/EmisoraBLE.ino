@@ -36,7 +36,7 @@ class EmisoraBLE{
    Bluefruit.ScanResponse.addName();
     }
 
-   void anunciarX(uint8_t temperatura, uint8_t humedad, uint8_t medida){
+   void anunciarCO(uint8_t temperatura, uint8_t humedad, uint8_t medida){
 
   uint16_t elMajor=((uint16_t)temperatura << 8) | humedad;
   uint16_t elMinor=(uint16_t)medida;
