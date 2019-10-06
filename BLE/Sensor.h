@@ -4,13 +4,13 @@ class Sensor{
   private:
 
   
- double medida=-1;
- double temperatura=-1;
- double humedad=-1;
+ int medida=-1;
+ int temperatura=-1;
+ int humedad=-1;
 
    void cacharroDimeloTodo(){
     //comentar algo
-    double algo=1234;
+    int algo=123;
     medida=algo;
     temperatura=algo;
     humedad=algo;
@@ -25,15 +25,15 @@ Sensor(){}
    
     }
 
-  double medirCO(){
+  int medirCO(){
     cacharroDimeloTodo();
     return medida;
     }
-    double medirTemperatura(){
+    int medirTemperatura(){
     cacharroDimeloTodo();
     return temperatura;
     }
-   double medirHumedad(){
+   int medirHumedad(){
     cacharroDimeloTodo();
     return humedad;
     }
