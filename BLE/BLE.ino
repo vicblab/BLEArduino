@@ -18,6 +18,6 @@ void loop() {
   // put your main code here, to run repeatedly:
 
   miEmisora.anunciarCO(miSensor.medirTemperatura(),miSensor.medirHumedad(),miSensor.medirCO());
-  delay(5000);
+ miSensor.teEsperas(5000);
 
 }
