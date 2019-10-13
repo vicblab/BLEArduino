@@ -93,6 +93,7 @@ class EmisoraBLE{
         }*/
     
     }//anunciarCO()
+    
   
   };//class EmisoraBLE
 

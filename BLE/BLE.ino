@@ -36,6 +36,14 @@
   }//setup()
 
 
+// -------------------------------------------
+//  () -> medirYPublicar() -> ()
+// Función que llama a las funciones del sensor que miden e invoca a la función de la emisora BLE que emite la trama con esas mediciones
+// -------------------------------------------
+  void medirYPublicar(){
+  
+  miEmisora.anunciarCO(miSensor.medirTemperatura(),miSensor.medirHumedad(),miSensor.medirCO());
+  }//medirYPublicar()
 
   
 // -------------------------------------------
@@ -45,8 +53,7 @@
   void loop() {
   
   
-
-  miEmisora.anunciarCO(miSensor.medirTemperatura(),miSensor.medirHumedad(),miSensor.medirCO());
+  medirYPublicar();
   
   miSensor.teEsperas(5000);
 

@@ -88,7 +88,7 @@ class Sensor{
    void inicializar(){
   //inicia el sensor y demás
   Serial.begin(9600); // Serial is the USB serial port
-   while ( !Serial ) delay(10);   // for nrf52840 with native usb
+   while ( !Serial ) teEsperas(10);   // for nrf52840 with native usb
 Serial1.begin(9600); // Puerto serie hardware para comunicación con el sensor, 8 bit, no parity, 1 stop bit, 3.3V
 
  
