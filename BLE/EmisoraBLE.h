@@ -19,7 +19,7 @@ class EmisoraBLE{
 // inicializamos la uuid y el nombre del beacon
   uint8_t beaconUUID[16] ={
      'E', 'P', 'S', 'G', '-', 'G', 'T', 'I',
-     '-', 'P', 'R', 'O', 'Y', '-', '3', 'A'
+     '-', 'E', 'Q', 'U', 'I', 'P', 'O', '5'
      };
      char nombre[16]="GTI-3A-Equipo_5";//{
   
